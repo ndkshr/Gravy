@@ -1,4 +1,4 @@
-# Gravy
+# Gravy - Expense Manager
 Gravy is an expense manager app.
 
 
