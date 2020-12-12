@@ -1,11 +1,19 @@
-# Gravy - Expense Manager
-Gravy is an expense manager app.
+**Weather Application**
+
+Sample app using MVVM, dagger and Android test cases
+Fetches the temperature and forecast for the coming 4 days of current location.
 
 
-## Development/Contributions
-Please push your contributions and development to the ```dev``` branch
+To build run
 
-Clone the ```dev``` branch
-```
-git clone --single-branch --branch dev https://github.com/ndkshr/gravy
-```
+`./gradlew assembleDebug`
+
+To get test coverage report run
+
+`./gradlew jacocoTestReport`
+
+
+The apk file and the test reports are included in the root folder
+
+- app-debug.apk
+- jacocoTestReport/html/index.html
