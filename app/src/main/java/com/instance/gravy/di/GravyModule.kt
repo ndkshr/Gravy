@@ -17,5 +17,5 @@ abstract class GravyModule {
     @Binds
     @IntoMap
     @ViewModelKey(GravyMainActivityVM::class)
-    abstract fun providesMainActivityViewModel(weatherVMGravy: GravyMainActivityVM): ViewModel
+    abstract fun providesMainActivityViewModel(gravyMainActivityVM: GravyMainActivityVM): ViewModel
 }

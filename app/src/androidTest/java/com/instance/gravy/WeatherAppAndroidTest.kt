@@ -14,7 +14,7 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 @LargeTest
-class WeatherActivityTest {
+class GravyActivityTest {
 
     lateinit var webServer: MockWebServer
 
