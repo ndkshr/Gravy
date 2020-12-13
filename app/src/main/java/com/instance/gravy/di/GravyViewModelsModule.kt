@@ -2,7 +2,7 @@ package com.instance.gravy.di
 
 import androidx.lifecycle.ViewModel
 import com.instance.gravy.utils.ViewModelKey
-import com.instance.gravy.viewmodel.AddNotesViewModel
+import com.instance.gravy.viewmodel.AddTaskViewModel
 import com.instance.gravy.viewmodel.GravyMainViewModel
 import dagger.Binds
 import dagger.Module
@@ -18,6 +18,6 @@ abstract class GravyViewModelsModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(AddNotesViewModel::class)
-    abstract fun providesAddNotesViewModel(viewModel: AddNotesViewModel): ViewModel
+    @ViewModelKey(AddTaskViewModel::class)
+    abstract fun providesAddNotesViewModel(viewModel: AddTaskViewModel): ViewModel
 }

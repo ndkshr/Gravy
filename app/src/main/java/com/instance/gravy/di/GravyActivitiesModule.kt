@@ -1,6 +1,6 @@
 package com.instance.gravy.di
 
-import com.instance.gravy.view.AddNotesActivity
+import com.instance.gravy.view.AddTaskActivity
 import com.instance.gravy.view.GravyMainActivity
 
 import dagger.Module
@@ -12,5 +12,5 @@ abstract class GravyActivitiesModule {
     abstract fun contributeMainActivity(): GravyMainActivity
 
     @ContributesAndroidInjector()
-    abstract fun contributeAddNotesActivity(): AddNotesActivity
+    abstract fun contributeAddNotesActivity(): AddTaskActivity
 }

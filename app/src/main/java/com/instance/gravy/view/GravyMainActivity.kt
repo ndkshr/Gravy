@@ -44,7 +44,7 @@ class GravyMainActivity : AppCompatActivity() {
     }
 
     private fun showLearningProgress() {
-
+        AddTaskActivity.start(this)
     }
 
     private fun showFinancialProgress() {
