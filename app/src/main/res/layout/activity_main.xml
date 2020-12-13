@@ -16,34 +16,26 @@
             app:layout_constraintGuide_percent="0.5" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/gh_20"
+            android:id="@+id/gh_50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.20" />
+            app:layout_constraintGuide_percent="0.50" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/gh_60"
+            android:id="@+id/gh_75"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.60" />
-
-        <include layout="@layout/layout_profile"
-            android:id="@+id/profile_view"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/gh_20"
-            app:layout_constraintVertical_weight="0.3"/>
+            app:layout_constraintGuide_percent="0.75" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/learning_card"
             app:cardBackgroundColor="@color/colorPrimary"
-            app:layout_constraintTop_toBottomOf="@id/profile_view"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/gh_60"
+            app:layout_constraintBottom_toTopOf="@id/gh_50"
             android:layout_width="match_parent"
             android:layout_height="0dp" />
 
@@ -53,7 +45,7 @@
             app:layout_constraintTop_toBottomOf="@id/learning_card"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/mental_card"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/physical_card"
             android:layout_width="0dp"
             android:layout_height="0dp" />
 
@@ -70,7 +62,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/physical_card"
             app:layout_constraintTop_toBottomOf="@id/mental_card"
-            app:layout_constraintStart_toStartOf="@id/mental_card"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/leisure_card"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_width="0dp"
