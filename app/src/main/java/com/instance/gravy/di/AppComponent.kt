@@ -13,7 +13,8 @@ import javax.inject.Singleton
         AndroidSupportInjectionModule::class,
         NetworkModule::class,
         ViewModelModule::class,
-        GravyModule::class
+        GravyActivitiesModule::class,
+        GravyViewModelsModule::class
     ]
 )
 interface AppComponent {
